@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    height: 100vh;
+    color: #cecece;
+    background-color: rgb(1, 31,43);
+    padding: 40 0;
+}
+.glass-container{
+width: 90%;
+margin: 0 auto;
+height: calc(100vh - 80px);
+background-color: rgba(31,60,70,0.6);
+border-radius: 10px;
+margin-top: 35px;
+position: relative;
+z-index: 4;
+backdrop-filter: blur(20px);
+}
+.bg-1,
+.bg-2 {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(
+        126deg,
+        rgba(169,28,115,1) 21%,
+        rgba(241,92,11,1) 93%
+    );
+    position: absolute;
+    z-index: 1;
+}
+.bg-1 {
+    top: 7%;
+    left: 5.5%;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 50px;
+}
+.bg-2 {
+    bottom: 8%;
+    right: 5.5%;
+    border-radius: 50%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+.logo{
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo span {
+    color: darkblue;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+    letter-spacing: 1;
+    font-weight: bold;
+    transition: all  ease;
+}
+ul li a:hover ,.active{
+    color: orangered;
+
+}
+.main{
+    display: flex;
+    padding-left: 5%;
+}
+.inner-content {
+    flex-basis: 50%;
+}
+.inner-content h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.inner-content p{
+    color: #959595;
+}
+.btn{
+    display: inline-block;
+    color: #cecece;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #d42d65;
+    padding: 12px 40px;
+    border: 2px;
+    margin-top: 40px;
+    transition: all ease;
+    outline: 4px solid rgb(23 ,44 ,51,rgba(31,60,70,0.6));
+}
+.btn:hover ,
+.btn:focus{
+        outline: 4px solid rgb(23 ,44 ,51,rgba(31,60,70,0.6));
+        outline-offset: -8px;
+}
